@@ -4,8 +4,6 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'RDDSH 学习小组',
   description: 'AI 工具、Harness、Agent 与工作流实践交流',
-  base: '/rd-dsh-agenda-team/',
-  cleanUrls: true,
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
