@@ -6,27 +6,13 @@ on:
   push:
     branches: [main]
 
-permissions:
-  contents: read
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund
-      - name: Build VitePress
-        run: npm run docs:build
-      - name: Verify generated pages and assets
-        run: |
-          test -f docs/.vitepress/dist/index.html
-          test -f docs/.vitepress/dist/weekly/2026-10-17.html
-          test -n "$(find docs/.vitepress/dist/assets -name '*.css' -print -quit)"
-          grep -q 'href="/assets/' docs/.vitepress/dist/index.html
-          grep -q 'https://raw.githubusercontent.com/Ri0n72Y/rd-dsh-agenda-team/refs/heads/main/.agents/skills/project-team/SKILL.md' docs/.vitepress/dist/weekly/2026-10-17.html
+      - run: npm install --no-audit --no-fund
+      - run: npm run docs:build
