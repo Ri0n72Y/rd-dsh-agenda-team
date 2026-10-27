@@ -16,6 +16,7 @@ export default defineConfig({
           text: '周报',
           items: [
             { text: '周报索引', link: '/weekly/' },
+            { text: '2026-10-25 · 第二期', link: '/weekly/2026-10-25' },
             { text: '2026-10-17 · 第一期', link: '/weekly/2026-10-17' },
           ],
         },
