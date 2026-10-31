@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: RDDSH 学习小组
+  name: DSH 学习小组
   text: 从实践中提炼方法
   tagline: 围绕 AI Harness、Agent、Plugin、Skill 与自动化工作流，交流真实经验，沉淀可复用的知识。
   actions:
