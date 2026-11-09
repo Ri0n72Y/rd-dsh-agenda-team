@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 阅读最新周报
-      link: /weekly/2026-11-01
+      link: /weekly/2026-11-08
     - theme: alt
       text: 查看 GitHub 仓库
       link: https://github.com/Ri0n72Y/rd-dsh-agenda-team
@@ -16,6 +16,6 @@ hero:
 
 ## 最新周报
 
-[2026 年 11 月 1 日｜第三期：DSH 给无产阶级带来了什么？](./weekly/2026-11-01.md)
+[2026 年 11 月 8 日｜第四期：注意力是稀缺资源：解读 SuperAgent 哲学与分治架构](./weekly/2026-11-08.md)
 
 小组成员来自不同专业领域，关注 AI 能否在真实工作中可靠地完成任务，以及如何将实践经验整理为可以再次使用的方法。
