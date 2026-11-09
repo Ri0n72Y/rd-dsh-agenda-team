@@ -7,7 +7,7 @@
     <div v-if="error" class="mermaid-error" role="alert">
       <strong>Mermaid 图表渲染失败</strong>
       <p>{{ error }}</p>
-      <pre>{{ code }}</pre>
+      <pre>{{ props.code }}</pre>
     </div>
     <div v-else-if="svg" class="mermaid-svg" v-html="svg"></div>
     <p v-else class="mermaid-loading">图表加载中…</p>
