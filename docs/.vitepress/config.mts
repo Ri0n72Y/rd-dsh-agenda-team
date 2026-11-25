@@ -4,6 +4,21 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'DSH 学习小组',
   description: 'AI 工具、Harness、Agent 与工作流实践交流',
+  markdown: {
+    config(md) {
+      const fence = md.renderer.rules.fence!
+      md.renderer.rules.fence = (...args) => {
+        const [tokens, index] = args
+        const token = tokens[index]
+
+        if (token.info.trim() === 'mermaid') {
+          return `<vitepress-mermaid code="${md.utils.escapeHtml(token.content.trim())}"></vitepress-mermaid>\n`
+        }
+
+        return fence(...args)
+      }
+    },
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
